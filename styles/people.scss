@@ -1,0 +1,14 @@
+.people {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    gap: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 155px;
+    transition: 1s;
+
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(4, 200px);
+    }
+}

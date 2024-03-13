@@ -1,0 +1,54 @@
+    .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        transition: transform .3s linear;
+        transition-delay: 100ms;
+
+        &__photo {
+            display: flex;
+            position: relative;
+            justify-content: right;
+            align-items: center;
+
+            &-img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+
+            &-rank {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                background-color: $white;
+                border-radius: 50%;
+                right: 10px;
+                color: $rank-color;
+                line-height: 18.4px;
+                font-size: 16px;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: #EEE;
+            border-radius: 10px;
+            transform: scale(1.2);
+            z-index: 1;
+            padding: 10px;
+        }
+
+        &:hover .details__extra {
+            transform: scale(1);
+        }
+
+        &:hover .person__photo-img {
+            border-radius: 20%;
+        }
+
+    }

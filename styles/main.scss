@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'people';
+@import 'person';
+@import 'details';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    color: $color-primary;
+    font-size: $font-size;
+}
